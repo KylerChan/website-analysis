@@ -41,44 +41,41 @@ A comprehensive Python tool for analyzing websites and generating detailed repor
 The tool supports 25 different user agents:
 
 **Browsers & Mobile:**
-1. iPhone (Safari)
-2. Macbook (Safari)
-3. Windows (Chrome)
-4. Linux (Firefox)
-5. Android (Chrome)
-6. Smart TV (Samsung Tizen Browser)
-7. Game Console (PlayStation 5)
-8. iPadOS Safari
-9. Edge on Windows 11
-10. Opera Browser
-11. Tor Browser
-12. Nintendo Switch
-13. Internet Explorer 11 on Win7
-14. Linux Desktop Chrome
+
+- iPhone (Safari)
+- Macbook (Safari)
+- Windows (Chrome)
+- Linux (Firefox)
+- Android (Chrome)
+- Smart TV (Samsung Tizen Browser)
+- Game Console (PlayStation 5)
+- iPadOS Safari
+- Edge on Windows 11
+- Opera Browser
+- Tor Browser
+- Nintendo Switch
+- Internet Explorer 11 on Win7
+- Linux Desktop Chrome
 
 **Crawlers & Bots:**
-15. Googlebot (Search Bot)
 
-16. Facebook Crawler
-
-17. Slackbot Link Expander
-
-18. Googlebot-Mobile
-
-19. Bixby Voice Assistant
-
-20. Facebook Mobile App WebView
+- Googlebot (Search Bot)
+- Facebook Crawler
+- Slackbot Link Expander
+- Googlebot-Mobile
+- Bixby Voice Assistant
+- Facebook Mobile App WebView
 
 **Command Line Tools:**
-21. curl command-line tool
-22. wget command-line tool
-23. Python Requests library
+- curl command-line tool
+- wget command-line tool
+- Python Requests library
 
 **CDN & Services:**
-24. Amazon CloudFront Origin Shield
+- Amazon CloudFront Origin Shield
 
 **Custom:**
-25. Enter your own User-Agent Code
+- Enter your own User-Agent Code
 
 ## Installation 🚀
 
