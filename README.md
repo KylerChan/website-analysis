@@ -206,6 +206,7 @@ This project is open source and available under the [GNU GENERAL PUBLIC LICENSE]
 ## Author 👨‍💻
 
 Created by [@KylerChan](https://github.com/KylerChan)
+**Email** [kyler.chanpinhan@gmail.com](mailto:kyler.chanpinhan@gmail.com) for direct communication
 
 ## Support 💬
 
