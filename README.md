@@ -58,10 +58,15 @@ The tool supports 25 different user agents:
 
 **Crawlers & Bots:**
 15. Googlebot (Search Bot)
+
 16. Facebook Crawler
+
 17. Slackbot Link Expander
+
 18. Googlebot-Mobile
+
 19. Bixby Voice Assistant
+
 20. Facebook Mobile App WebView
 
 **Command Line Tools:**
