@@ -90,6 +90,7 @@ def main():
     elif user_headerChoice == 24:
         userAgent = "Amazon CloudFront"
     elif user_headerChoice == 25:
+        customAgent = True
         userAgent = input("Enter the user agent code here: ")
     
     headers = {
@@ -136,12 +137,12 @@ def main():
     os.makedirs(results_dir, exist_ok=True)
     
     report_content = []
-    report_content.append("=" * 80)
+    report_content.append("=" * 40)
     report_content.append("WEBSITE ANALYSIS REPORT")
-    report_content.append("=" * 80)
+    report_content.append("=" * 40)
     report_content.append(f"URL: {url}")
     report_content.append(f"Generated: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    report_content.append("=" * 80)
+    report_content.append("=" * 40)
     report_content.append("")
     
     report_content.append("BASIC INFORMATION")
@@ -165,16 +166,14 @@ def main():
     report_content.append("RESPONSE HEADERS")
     report_content.append("-" * 40)
     for key, value in headers_dict.items():
-        display_value = str(value)[:100] + ('...' if len(str(value)) > 100 else '')
-        report_content.append(f"{key}: {display_value}")
+        report_content.append(f"{key}: {str(value)}")
     report_content.append("")
     
     if meta_tags:
         report_content.append("META TAGS")
         report_content.append("-" * 40)
         for name, content in meta_tags.items():
-            display_content = str(content)[:100] + ('...' if len(str(content)) > 100 else '')
-            report_content.append(f"{name}: {display_content}")
+            report_content.append(f"{name}: {str(content)}")
         report_content.append("")
     
     report_content.append("SECURITY HEADERS ANALYSIS")
@@ -182,13 +181,13 @@ def main():
     for key, value in security_headers.items():
         status = 'PRESENT' if value != 'Not set' else 'MISSING'
         status_indicator = '[✓]' if status == 'PRESENT' else '[✗]'
-        display_value = str(value)[:80] + ('...' if len(str(value)) > 80 else '')
-        report_content.append(f"{status_indicator} {key}: {status} - {display_value}")
+        report_content.append(f"{status_indicator} {key}: {status} - {str(value)}")
     report_content.append("")
     
     report_content.append("REQUEST INFORMATION")
     report_content.append("-" * 40)
     report_content.append(f"User Agent Used: {userAgent}")
+    
     report_content.append("")
     
     report_content.append("SUMMARY")
@@ -199,9 +198,9 @@ def main():
     report_content.append(f"Total Elements: {links_count + images_count + scripts_count + styles_count + forms_count}")
     report_content.append(f"Analysis completed at: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     report_content.append("")
-    report_content.append("=" * 80)
+    report_content.append("=" * 40)
     report_content.append("END OF REPORT - Tool made by @KylerChan on GitHub")
-    report_content.append("=" * 80)
+    report_content.append("=" * 40)
     
     report_path = os.path.join(results_dir, f"{report_name}.txt")
     with open(report_path, 'w', encoding='utf-8') as f:
